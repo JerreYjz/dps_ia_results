@@ -1,0 +1,20 @@
+# DES Y3-like test: 4 source bins, 64 x 64 pixels of 8 arcmin (the 8.53 deg field of the DES Y3 patches).
+# Run from the top of this repository: python3 <DPS code>/train.py des_y3_like/des_like.yaml
+map:
+        n_tomo: 4
+        n_grid: 64
+        theta_max: 8.53333333333
+train:
+        data_folder: ./work/patches          # make_des_like_maps.py
+        results_folder: ./work/results       # model-1.pt after 2000 steps
+        nsteps: 2000
+        n_patches: 4000
+        transform:
+                kappa_min: -0.012632,-0.021227,-0.033483,-0.041507
+                kappa_max: 0.022880,0.039632,0.057775,0.070187
+data:
+        neff: 1.475                          # galaxies per arcmin^2 per bin (DES Y3)
+        sigma_e: 0.26                        # shape noise per component
+ia:
+        spectra_file: ./work/ia_spectra_shells.npz   # Limber spectra of the same shells, A_IA = 1
+        A_IA: 0.5                            # amplitude of the shell-built NLA IA put into the mocks

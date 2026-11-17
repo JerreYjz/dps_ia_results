@@ -1,0 +1,12 @@
+{
+ "about": "Numbers quoted in the note that come from the local setup of the DPS code on 2026-11-16 (DPS_mass_mapping/LOCAL_SETUP.md, section 4 and section 5 item 6), not from the scripts of this repository. toy_*: compare_ia_runs.py on the toy run (IA injected with the sampler's own model, A = 0.5). roman_spurious_max: largest spurious power of R kappa relative to C_II, 40 < ell < 8000, when R is built from pairwise ccl.angular_cl spectra for the 8 Roman source bins. train_minutes, sample_minutes_per_run: wall-clock on the M3 (MPS) for this DES Y3-like run. shells_vs_ccl_*: largest deviation in percent of the shell-sum spectra from CCL (validate_nla_shells.py, diagonal bins, ell = 100 to 3000).",
+ "toy_A_truth": "0.61",
+ "toy_A_truth_sd": "0.06",
+ "toy_A_modelled": "0.51",
+ "toy_A_ignored": "0.10",
+ "roman_spurious_max": "1.3",
+ "train_minutes": "40",
+ "sample_minutes_per_run": "5",
+ "shells_vs_ccl_des_percent": "0.5",
+ "shells_vs_ccl_roman_percent": "0.3"
+}

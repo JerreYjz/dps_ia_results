@@ -1,0 +1,278 @@
+% Part 1: results (move when the analysis is rerun).
+% des_y3_like/results/validate_ia_model.json, predicted_fraction_measured[0] x 100
+\newcommand{\PredFracMeasOne}{\refresh{99.3}}
+% des_y3_like/results/validate_ia_model.json, predicted_fraction_theory[0] x 100
+\newcommand{\PredFracTheoryOne}{\refresh{99.3}}
+% des_y3_like/results/validate_ia_model.json, corr_prediction_with_true_IA[0]
+\newcommand{\CorrPredOne}{\refresh{0.996}}
+% des_y3_like/results/validate_ia_model.json, rms_ratio_IA_over_kappa[0] (A_IA = 1)
+\newcommand{\IAoverKappaOne}{\refresh{0.40}}
+% des_y3_like/results/validate_ia_model.json, predicted_fraction_measured[1] x 100
+\newcommand{\PredFracMeasTwo}{\refresh{98.9}}
+% des_y3_like/results/validate_ia_model.json, predicted_fraction_theory[1] x 100
+\newcommand{\PredFracTheoryTwo}{\refresh{98.9}}
+% des_y3_like/results/validate_ia_model.json, corr_prediction_with_true_IA[1]
+\newcommand{\CorrPredTwo}{\refresh{0.994}}
+% des_y3_like/results/validate_ia_model.json, rms_ratio_IA_over_kappa[1] (A_IA = 1)
+\newcommand{\IAoverKappaTwo}{\refresh{0.17}}
+% des_y3_like/results/validate_ia_model.json, predicted_fraction_measured[2] x 100
+\newcommand{\PredFracMeasThree}{\refresh{96.6}}
+% des_y3_like/results/validate_ia_model.json, predicted_fraction_theory[2] x 100
+\newcommand{\PredFracTheoryThree}{\refresh{96.6}}
+% des_y3_like/results/validate_ia_model.json, corr_prediction_with_true_IA[2]
+\newcommand{\CorrPredThree}{\refresh{0.983}}
+% des_y3_like/results/validate_ia_model.json, rms_ratio_IA_over_kappa[2] (A_IA = 1)
+\newcommand{\IAoverKappaThree}{\refresh{0.10}}
+% des_y3_like/results/validate_ia_model.json, predicted_fraction_measured[3] x 100
+\newcommand{\PredFracMeasFour}{\refresh{71.5}}
+% des_y3_like/results/validate_ia_model.json, predicted_fraction_theory[3] x 100
+\newcommand{\PredFracTheoryFour}{\refresh{71.5}}
+% des_y3_like/results/validate_ia_model.json, corr_prediction_with_true_IA[3]
+\newcommand{\CorrPredFour}{\refresh{0.845}}
+% des_y3_like/results/validate_ia_model.json, rms_ratio_IA_over_kappa[3] (A_IA = 1)
+\newcommand{\IAoverKappaFour}{\refresh{0.07}}
+% des_y3_like/results/validate_ia_model.json, max |corr_residual_with_kappa|
+\newcommand{\CorrResMax}{\refresh{0.004}}
+% des_y3_like/results/validate_ia_model.json, max |spectra_ratio - 1| x 100 over the three spectra, ell > 150
+\newcommand{\SpectraDevHighEll}{\refresh{4}}
+% des_y3_like/results/validate_ia_model.json, max |spectra_ratio - 1| x 100 over the three spectra, ell < 150
+\newcommand{\SpectraDevLowEll}{\refresh{13}}
+% des_y3_like/results/validate_ia_model.json, (1 - predicted_fraction_theory[3]) x 100
+\newcommand{\ResidFracFour}{\refresh{28}}
+% des_y3_like/results/validate_ia_model.json, max |residual_power_ratio - 1| x 100, ell > 150
+\newcommand{\ResidualDevHighEll}{\refresh{4}}
+% des_y3_like/results/validate_ia_model.json, A_mean
+\newcommand{\AmpTruthAllMean}{\refresh{0.53}}
+% des_y3_like/results/validate_ia_model.json, A_sem
+\newcommand{\AmpTruthAllSem}{\refresh{0.02}}
+% des_y3_like/results/validate_ia_model.json, A_reported_sd
+\newcommand{\AmpSdPatch}{\refresh{0.23}}
+% des_y3_like/results/validate_ia_model.json, A_noiseless_mean
+\newcommand{\AmpNoiseless}{\refresh{0.500}}
+% des_y3_like/results/validate_ia_model.json, A_noiseless_scatter
+\newcommand{\AmpNoiselessScatter}{\refresh{0.001}}
+% des_y3_like/results/validate_ia_model.json, pull_std
+\newcommand{\PullWidth}{\refresh{0.98}}
+% des_y3_like/results/dps_ia.json, summary.n_mocks
+\newcommand{\NMocks}{\refresh{4}}
+% des_y3_like/results/dps_ia.json, summary.A_given_modelled mean
+\newcommand{\AmpGivenModelled}{\refresh{0.53}}
+% des_y3_like/results/dps_ia.json, summary.A_given_modelled sem
+\newcommand{\AmpGivenModelledSem}{\refresh{0.04}}
+% des_y3_like/results/dps_ia.json, summary.A_given_ignored mean
+\newcommand{\AmpGivenIgnored}{\refresh{0.07}}
+% des_y3_like/results/dps_ia.json, summary.A_given_ignored sem
+\newcommand{\AmpGivenIgnoredSem}{\refresh{0.04}}
+% des_y3_like/results/dps_ia.json, summary.A_given_truth mean
+\newcommand{\AmpGivenTruth}{\refresh{0.32}}
+% des_y3_like/results/dps_ia.json, summary.A_given_truth sem
+\newcommand{\AmpGivenTruthSem}{\refresh{0.12}}
+% des_y3_like/results/dps_ia.json, summary.slope_ratio_minus_1 mean[0] x 100
+\newcommand{\BiasOne}{\refresh{\ensuremath{+0.7}}}
+% des_y3_like/results/dps_ia.json, summary.slope_ratio_minus_1 sem[0] x 100
+\newcommand{\BiasSemOne}{\refresh{0.1}}
+% des_y3_like/results/dps_ia.json, summary.slope_modelled mean[0]
+\newcommand{\SlopeModelledOne}{\refresh{0.17}}
+% des_y3_like/results/dps_ia.json, summary.corr_modelled mean[0]
+\newcommand{\CorrModelledOne}{\refresh{0.31}}
+% des_y3_like/results/dps_ia.json, summary.corr_ignored mean[0]
+\newcommand{\CorrIgnoredOne}{\refresh{0.31}}
+% des_y3_like/results/dps_ia.json, summary.corr_KS mean[0]
+\newcommand{\CorrKSOne}{\refresh{0.10}}
+% des_y3_like/results/dps_ia.json, summary.leak mean[0]
+\newcommand{\LeakOne}{\refresh{\ensuremath{-0.00}}}
+% des_y3_like/results/dps_ia.json, summary.leak_over_slope mean[0]
+\newcommand{\LeakOverSlopeOne}{\refresh{\ensuremath{-0.03}}}
+% des_y3_like/results/dps_ia.json, summary.corr_shift_with_IA mean[0]
+\newcommand{\ShiftCorrOne}{\refresh{\ensuremath{-0.07}}}
+% des_y3_like/results/dps_ia.json, summary.prior_rms_over_truth_rms[0]
+\newcommand{\PriorRmsOne}{\refresh{0.98}}
+% des_y3_like/results/dps_ia.json, summary.slope_ratio_minus_1 mean[1] x 100
+\newcommand{\BiasTwo}{\refresh{\ensuremath{+1.2}}}
+% des_y3_like/results/dps_ia.json, summary.slope_ratio_minus_1 sem[1] x 100
+\newcommand{\BiasSemTwo}{\refresh{0.1}}
+% des_y3_like/results/dps_ia.json, summary.slope_modelled mean[1]
+\newcommand{\SlopeModelledTwo}{\refresh{0.21}}
+% des_y3_like/results/dps_ia.json, summary.corr_modelled mean[1]
+\newcommand{\CorrModelledTwo}{\refresh{0.36}}
+% des_y3_like/results/dps_ia.json, summary.corr_ignored mean[1]
+\newcommand{\CorrIgnoredTwo}{\refresh{0.37}}
+% des_y3_like/results/dps_ia.json, summary.corr_KS mean[1]
+\newcommand{\CorrKSTwo}{\refresh{0.19}}
+% des_y3_like/results/dps_ia.json, summary.leak mean[1]
+\newcommand{\LeakTwo}{\refresh{\ensuremath{-0.01}}}
+% des_y3_like/results/dps_ia.json, summary.leak_over_slope mean[1]
+\newcommand{\LeakOverSlopeTwo}{\refresh{\ensuremath{-0.06}}}
+% des_y3_like/results/dps_ia.json, summary.corr_shift_with_IA mean[1]
+\newcommand{\ShiftCorrTwo}{\refresh{\ensuremath{-0.06}}}
+% des_y3_like/results/dps_ia.json, summary.prior_rms_over_truth_rms[1]
+\newcommand{\PriorRmsTwo}{\refresh{0.98}}
+% des_y3_like/results/dps_ia.json, summary.slope_ratio_minus_1 mean[2] x 100
+\newcommand{\BiasThree}{\refresh{\ensuremath{+1.8}}}
+% des_y3_like/results/dps_ia.json, summary.slope_ratio_minus_1 sem[2] x 100
+\newcommand{\BiasSemThree}{\refresh{0.1}}
+% des_y3_like/results/dps_ia.json, summary.slope_modelled mean[2]
+\newcommand{\SlopeModelledThree}{\refresh{0.23}}
+% des_y3_like/results/dps_ia.json, summary.corr_modelled mean[2]
+\newcommand{\CorrModelledThree}{\refresh{0.39}}
+% des_y3_like/results/dps_ia.json, summary.corr_ignored mean[2]
+\newcommand{\CorrIgnoredThree}{\refresh{0.39}}
+% des_y3_like/results/dps_ia.json, summary.corr_KS mean[2]
+\newcommand{\CorrKSThree}{\refresh{0.27}}
+% des_y3_like/results/dps_ia.json, summary.leak mean[2]
+\newcommand{\LeakThree}{\refresh{\ensuremath{-0.01}}}
+% des_y3_like/results/dps_ia.json, summary.leak_over_slope mean[2]
+\newcommand{\LeakOverSlopeThree}{\refresh{\ensuremath{-0.04}}}
+% des_y3_like/results/dps_ia.json, summary.corr_shift_with_IA mean[2]
+\newcommand{\ShiftCorrThree}{\refresh{\ensuremath{-0.03}}}
+% des_y3_like/results/dps_ia.json, summary.prior_rms_over_truth_rms[2]
+\newcommand{\PriorRmsThree}{\refresh{0.99}}
+% des_y3_like/results/dps_ia.json, summary.slope_ratio_minus_1 mean[3] x 100
+\newcommand{\BiasFour}{\refresh{\ensuremath{+3.0}}}
+% des_y3_like/results/dps_ia.json, summary.slope_ratio_minus_1 sem[3] x 100
+\newcommand{\BiasSemFour}{\refresh{0.1}}
+% des_y3_like/results/dps_ia.json, summary.slope_modelled mean[3]
+\newcommand{\SlopeModelledFour}{\refresh{0.23}}
+% des_y3_like/results/dps_ia.json, summary.corr_modelled mean[3]
+\newcommand{\CorrModelledFour}{\refresh{0.38}}
+% des_y3_like/results/dps_ia.json, summary.corr_ignored mean[3]
+\newcommand{\CorrIgnoredFour}{\refresh{0.39}}
+% des_y3_like/results/dps_ia.json, summary.corr_KS mean[3]
+\newcommand{\CorrKSFour}{\refresh{0.32}}
+% des_y3_like/results/dps_ia.json, summary.leak mean[3]
+\newcommand{\LeakFour}{\refresh{\ensuremath{-0.04}}}
+% des_y3_like/results/dps_ia.json, summary.leak_over_slope mean[3]
+\newcommand{\LeakOverSlopeFour}{\refresh{\ensuremath{-0.19}}}
+% des_y3_like/results/dps_ia.json, summary.corr_shift_with_IA mean[3]
+\newcommand{\ShiftCorrFour}{\refresh{\ensuremath{-0.07}}}
+% des_y3_like/results/dps_ia.json, summary.prior_rms_over_truth_rms[3]
+\newcommand{\PriorRmsFour}{\refresh{0.99}}
+% des_y3_like/results/dps_ia.json, summary.rms_shift_over_rms_mean, mean over bins x 100
+\newcommand{\RmsShiftPercent}{\refresh{3}}
+% des_y3_like/results/wiener_reference.json, slope_ratio_minus_1 mean[0] x 100
+\newcommand{\WFBiasOne}{\refresh{\ensuremath{-1.2}}}
+% des_y3_like/results/wiener_reference_deep.json, slope_ratio_minus_1 mean[0] x 100
+\newcommand{\WFDeepBiasOne}{\refresh{\ensuremath{-3.3}}}
+% des_y3_like/results/wiener_reference.json, single_bin_slope_ratio_minus_1 mean[0] x 100
+\newcommand{\WFSingleBiasOne}{\refresh{\ensuremath{+15.4}}}
+% des_y3_like/results/wiener_reference.json, slope_modelled mean[0]
+\newcommand{\WFSlopeOne}{\refresh{0.23}}
+% des_y3_like/results/wiener_reference.json, corr_modelled mean[0]
+\newcommand{\WFCorrOne}{\refresh{0.48}}
+% des_y3_like/results/wiener_reference.json, slope_ratio_minus_1 mean[1] x 100
+\newcommand{\WFBiasTwo}{\refresh{\ensuremath{-0.8}}}
+% des_y3_like/results/wiener_reference_deep.json, slope_ratio_minus_1 mean[1] x 100
+\newcommand{\WFDeepBiasTwo}{\refresh{\ensuremath{-2.4}}}
+% des_y3_like/results/wiener_reference.json, single_bin_slope_ratio_minus_1 mean[1] x 100
+\newcommand{\WFSingleBiasTwo}{\refresh{\ensuremath{+2.9}}}
+% des_y3_like/results/wiener_reference.json, slope_modelled mean[1]
+\newcommand{\WFSlopeTwo}{\refresh{0.28}}
+% des_y3_like/results/wiener_reference.json, corr_modelled mean[1]
+\newcommand{\WFCorrTwo}{\refresh{0.53}}
+% des_y3_like/results/wiener_reference.json, slope_ratio_minus_1 mean[2] x 100
+\newcommand{\WFBiasThree}{\refresh{\ensuremath{-0.2}}}
+% des_y3_like/results/wiener_reference_deep.json, slope_ratio_minus_1 mean[2] x 100
+\newcommand{\WFDeepBiasThree}{\refresh{\ensuremath{-1.4}}}
+% des_y3_like/results/wiener_reference.json, single_bin_slope_ratio_minus_1 mean[2] x 100
+\newcommand{\WFSingleBiasThree}{\refresh{\ensuremath{+0.5}}}
+% des_y3_like/results/wiener_reference.json, slope_modelled mean[2]
+\newcommand{\WFSlopeThree}{\refresh{0.30}}
+% des_y3_like/results/wiener_reference.json, corr_modelled mean[2]
+\newcommand{\WFCorrThree}{\refresh{0.55}}
+% des_y3_like/results/wiener_reference.json, slope_ratio_minus_1 mean[3] x 100
+\newcommand{\WFBiasFour}{\refresh{\ensuremath{+0.5}}}
+% des_y3_like/results/wiener_reference_deep.json, slope_ratio_minus_1 mean[3] x 100
+\newcommand{\WFDeepBiasFour}{\refresh{\ensuremath{-0.5}}}
+% des_y3_like/results/wiener_reference.json, single_bin_slope_ratio_minus_1 mean[3] x 100
+\newcommand{\WFSingleBiasFour}{\refresh{\ensuremath{+0.3}}}
+% des_y3_like/results/wiener_reference.json, slope_modelled mean[3]
+\newcommand{\WFSlopeFour}{\refresh{0.30}}
+% des_y3_like/results/wiener_reference.json, corr_modelled mean[3]
+\newcommand{\WFCorrFour}{\refresh{0.55}}
+% des_y3_like/results/wiener_reference_deep.json, neff
+\newcommand{\DeepNEff}{7.5}
+% notes/des_y3_like_ia/plots/dps_response/data.json, ks_bias_percent[0]
+\newcommand{\KSBiasOne}{\refresh{\ensuremath{-17.6}}}
+% notes/des_y3_like_ia/plots/dps_response/data.json, ks_bias_percent[1]
+\newcommand{\KSBiasTwo}{\refresh{\ensuremath{-5.4}}}
+% notes/des_y3_like_ia/plots/dps_response/data.json, ks_bias_percent[2]
+\newcommand{\KSBiasThree}{\refresh{\ensuremath{-1.6}}}
+% notes/des_y3_like_ia/plots/dps_response/data.json, ks_bias_percent[3]
+\newcommand{\KSBiasFour}{\refresh{\ensuremath{-1.3}}}
+% des_y3_like/results/toy_and_checks.json, toy_A_truth
+\newcommand{\ToyAmpTruth}{\refresh{0.61}}
+% des_y3_like/results/toy_and_checks.json, toy_A_truth_sd
+\newcommand{\ToyAmpTruthSd}{\refresh{0.06}}
+% des_y3_like/results/toy_and_checks.json, toy_A_modelled
+\newcommand{\ToyAmpModelled}{\refresh{0.51}}
+% des_y3_like/results/toy_and_checks.json, toy_A_ignored
+\newcommand{\ToyAmpIgnored}{\refresh{0.10}}
+% des_y3_like/results/toy_and_checks.json, roman_spurious_max
+\newcommand{\RomanSpuriousMax}{\refresh{1.3}}
+% des_y3_like/results/toy_and_checks.json, train_minutes
+\newcommand{\TrainMinutes}{\refresh{40}}
+% des_y3_like/results/toy_and_checks.json, sample_minutes_per_run
+\newcommand{\SampleMinutes}{\refresh{5}}
+% des_y3_like/results/toy_and_checks.json, shells_vs_ccl_des_percent
+\newcommand{\ShellsVsCCLDes}{\refresh{0.5}}
+% des_y3_like/results/toy_and_checks.json, shells_vs_ccl_roman_percent
+\newcommand{\ShellsVsCCLRoman}{\refresh{0.3}}
+% Part 2: inputs (a rerun does not change them).
+% work/maps_info.json, npix
+\newcommand{\NPix}{64}
+% work/maps_info.json, pixel_arcmin
+\newcommand{\PixArcmin}{8}
+% work/maps_info.json, theta_max_deg
+\newcommand{\FieldDeg}{8.53}
+% work/maps_info.json, n_shells
+\newcommand{\NShells}{100}
+% work/maps_info.json, n_shells_shifted
+\newcommand{\NShellsShifted}{58}
+% work/maps_info.json, z_max
+\newcommand{\ZMax}{3.0}
+% work/maps_info.json, n_train
+\newcommand{\NTrain}{4000}
+% work/maps_info.json, n_test
+\newcommand{\NTest}{100}
+% work/maps_info.json, cosmology.Omega_c
+\newcommand{\OmegaC}{0.25}
+% work/maps_info.json, cosmology.Omega_b
+\newcommand{\OmegaB}{0.05}
+% work/maps_info.json, cosmology.h
+\newcommand{\Hubble}{0.68}
+% work/maps_info.json, cosmology.sigma8
+\newcommand{\SigmaEight}{0.81}
+% work/maps_info.json, cosmology.n_s
+\newcommand{\SpectralIndex}{0.965}
+% work/maps_info.json, kappa_rms[0] x 1000
+\newcommand{\KappaRmsOne}{3.1}
+% work/maps_info.json, kappa_rms[1] x 1000
+\newcommand{\KappaRmsTwo}{5.2}
+% work/maps_info.json, kappa_rms[2] x 1000
+\newcommand{\KappaRmsThree}{7.8}
+% work/maps_info.json, kappa_rms[3] x 1000
+\newcommand{\KappaRmsFour}{9.4}
+% work/maps_info.json, shell_var_delta_max
+\newcommand{\ShellVarMax}{12}
+% des_y3_like/des_like.yaml, train.nsteps
+\newcommand{\TrainSteps}{2000}
+% DPS_mass_mapping train.py, train_batch_size
+\newcommand{\TrainBatch}{24}
+% DPS_mass_mapping train.py, Unet dim
+\newcommand{\UnetWidth}{64}
+% des_y3_like/run_des_like.py, --delta_t default
+\newcommand{\DeltaT}{500}
+% des_y3_like/run_des_like.py, --sigma_t default
+\newcommand{\SigmaT}{20}
+% des_y3_like/run_des_like.py, --steps default
+\newcommand{\SampleSteps}{1000}
+% des_y3_like/run_des_like.py, --n_samples default
+\newcommand{\NSamples}{4}
+% des_y3_like/des_like.yaml, ia.A_IA
+\newcommand{\AInjected}{0.5}
+% des_y3_like/results/validate_ia_model.json, sigma_pixel
+\newcommand{\SigmaPixel}{0.027}
+% des_y3_like/des_like.yaml, data.neff
+\newcommand{\NEff}{1.475}
+% des_y3_like/des_like.yaml, data.sigma_e
+\newcommand{\SigmaE}{0.26}
